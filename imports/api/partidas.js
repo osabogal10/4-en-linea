@@ -10,6 +10,11 @@ if(Meteor.isServer)
 	});	
 }
 
+//Orlando Sabogal: Les sugiero manejar los jugadores de una partida como un array, de esta forma solo
+//importa si estan o no presentes en la partida pero no importa el indice.
+//La partida podria manejar diferentes 'estados', por ejemplo para esperar a que se unan mas jugadores.
+//al crear una partida el sistema me detecto como ganador sin hacer el primer movimiento.
+
 Meteor.methods(
 {
 	"partidas.start":function(name){
