@@ -9,6 +9,10 @@ import {Players} from '../api/players.js';
 import {Partidas} from '../api/partidas.js';
 import PropTypes from "prop-types";
 
+//Orlandoi Sabogal:Al terminar un juego deberia ser posible volver a la sala de espera de jugadores 
+//para iniciar uno nuevo
+//No deberian permitir que un usuario cree una partida con si mismo.
+
 // App component - represents the whole app
 class App extends Component {
   constructor(props) {
